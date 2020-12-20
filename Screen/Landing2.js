@@ -4,7 +4,7 @@ import { View, Image, StyleSheet, Text, Button,SafeAreaView, } from 'react-nativ
 import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handler';
 
 
-export default function Landing({navigation}) {
+export default function Landing2({navigation}) {
     return (
     <SafeAreaView style={styles.container}>
     <View>
@@ -20,8 +20,8 @@ export default function Landing({navigation}) {
             (React native) </Text>
     </View>
     <View style={styles.landing}>
-            <TouchableOpacity style={styles.swipe} onPress={() => navigation.navigate('landing2')} />
-            <TouchableOpacity style={styles.swipe} onPress={() => navigation.navigate('landing2')} />   
+            <TouchableOpacity style={styles.swipe} onPress={()=>navigation.navigate('Landing')}/>
+            <TouchableOpacity style={styles.swipe} onPress={()=>navigation.navigate('Landing2')}/>   
     </View>
     <View style={styles.textcontainer}>
         <Text style={styles.ptext}>Powered by Stream-3 team-2</Text> 

@@ -17,7 +17,7 @@ export default function Landing({navigation}) {
         <Text style={ styles.stext}> Choose the class you belong to get started  </Text>
         </View>
         <View style={ styles.buttoncontainer}>
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')} >
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Landing2')} >
         <Text style={styles.buttonText} > STREAM 1 </Text>
         </TouchableOpacity> 
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')} >
@@ -27,8 +27,8 @@ export default function Landing({navigation}) {
         <Text style={styles.buttonText} > STREAM 3 </Text>
         </TouchableOpacity> 
         <View style={styles.landing}>
-            <TouchableOpacity style={styles.swipe} onPress={() => navigation.navigate('Landing')} />
-            <TouchableOpacity style={styles.swipe} onPress={() => navigation.navigate('Landing2')} />
+            <TouchableOpacity style={styles.swipe} onPress={()=> navigation.navigate('Landing')}/>
+            <TouchableOpacity style={styles.swipe} onPress={()=> navigation.navigate('Landing2')}/>
         </View>
         <View style={styles.textcontainer}>
         <Text style={styles.ptext}>Powered by Stream-3 team-2</Text> 
@@ -100,11 +100,12 @@ const styles = StyleSheet.create({
      },
      swipe: {
         backgroundColor: "#F0A64A",
-        width: 26,
-        height: 3,
+        width: 30,
+        height: 5,
         bordercolor:"#F0A64A",
         borderRadius:"10",
         flexDirection:"row",
+        borderRadius:10
      },
       buttoncontainer: {
         backgroundColor:"#ffffff",
