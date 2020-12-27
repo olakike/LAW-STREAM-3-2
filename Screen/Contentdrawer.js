@@ -20,7 +20,7 @@ function Contentdrawer({navigation}) {
       
  <Drawer.Navigator 
  screenOptions={({route})=>({
-     tabBarIcon:({ focused,color,size})=>{
+     drawerIcon:({ focused,color,size})=>{
        let iconName;
        if (route.name ==="Home"){
          iconName="home"
@@ -40,7 +40,7 @@ function Contentdrawer({navigation}) {
      return <Entypo name={iconName} size={45} color={color}/>
  }
    })}
-   tabBarOptions={{
+   Options={{
 activeTintColor:"green",
 inactiveTintColor: "gray",
 labelStyle:{

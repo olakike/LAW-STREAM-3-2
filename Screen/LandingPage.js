@@ -61,11 +61,13 @@ ftext:{
     alignContent:"center",
     justifyContent:"space-evenly",
     alignSelf:"center",
+    fontFamily: 'Mulish',
     padding:10
 },
 stext:{
     fontSize: 24,
     justifyContent:"space-evenly",
+    fontFamily: 'Mulish',
     fontWeight:"600",
     textAlign:"center",
     lineHeight:30,
@@ -74,6 +76,7 @@ ptext:{
     fontSize: 12,
     justifyContent:"space-evenly",
     textAlign:"center",
+    fontFamily: 'Mulish',
     marginTop:"20"
 },
 buttonText:{
@@ -82,6 +85,7 @@ buttonText:{
     fontWeight:"600",
     fontSize:"30",
     textAlign:"center",
+    fontFamily: 'Mulish',
     padding:8
 },
 textcontainer:{

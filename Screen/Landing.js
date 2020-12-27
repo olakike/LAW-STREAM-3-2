@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
         justifyContent:"space-evenly",
         alignSelf:"center",
         padding:20,
+        fontFamily: 'Mulish',
         color:"#FFFFFF",
         textAlign:"center"
     },
@@ -57,12 +58,14 @@ const styles = StyleSheet.create({
         fontWeight:"800",
         textAlign:"center",
         lineHeight:45,
+        fontFamily: 'Mulish',
         color:"#F0A64A"
     },
     ptext:{
         fontSize: 12,
         justifyContent:"space-evenly",
         textAlign:"center",
+        fontFamily: 'Mulish',
         marginTop:"20"
     },
     buttonText:{
@@ -71,7 +74,8 @@ const styles = StyleSheet.create({
         fontWeight:"600",
         fontSize:"30",
         textAlign:"center",
-        padding:8
+        padding:8,
+        fontFamily: 'Mulish',
     },
     textcontainer:{
         marginBottom:10,
