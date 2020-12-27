@@ -19,27 +19,7 @@ function Contentdrawer({navigation}) {
     return (
       
  <Drawer.Navigator 
- screenOptions={({route})=>({
-     drawerIcon:({ focused,color,size})=>{
-       let iconName;
-       if (route.name ==="Home"){
-         iconName="home"
-       } else if (route.name === 'Search') {
-         iconName = "md.search"
-       } else if (route.name === 'Profile') {
-         iconName = 'users'
-       }else if (route.name === 'M-Lesson') {
-         iconName = 'ios-folder'
-       }else if (route.name === 'Chat Session') {
-         iconName = ''
-       }else if (route.name === 'Lesson History') {
-         iconName = ''
-       }else if (route.name === 'Log-Out') {
-         iconName = 'md-log-out'
-     }
-     return <Entypo name={iconName} size={45} color={color}/>
- }
-   })}
+
    Options={{
 activeTintColor:"green",
 inactiveTintColor: "gray",
@@ -49,16 +29,46 @@ fontSize:30
 iconStyle:{
 size:50
 },
-showLabel:false
+showLabel:false,
+backgroundColor:"#477A71"
 }}
 >
-   <Drawer.Screen name="M-Lesson" component={ContentPage} />
-   <Drawer.Screen name="Profile" component={Profile} />
-   <Drawer.Screen name="Home" component={Home} />
-   <Drawer.Screen name="Search" component={Search} />
-   <Drawer.Screen name="Chat Session" component={LandingPage} />
-   <Drawer.Screen name="Lesson History" component={LandingPage} />
-   <Drawer.Screen name="Log-Out" component={Landing} />
+<Drawer.Screen options={{
+          headerTitleAlign:"center",
+          headerStyle:{ 
+            backgroundColor:"#54C571"
+           },
+           headerTitleStyle:{
+             color:"white"
+           },
+           headerTintColor:{
+             color:"white"
+           }
+         }} options={{headerShown:true, }} name="M-lessons" component={ContentPage} />
+<Drawer.Screen options={{
+          headerTitleAlign:"center",
+          headerStyle:{ 
+            backgroundColor:"#54C571"
+           },
+           headerTitleStyle:{
+             color:"white"
+           },
+           headerTintColor:{
+             color:"white"
+           }
+         }} options={{headerShown:true}} name="Lesson 1- Introduction to React" component={Home} />
+   <Drawer.Screen name="Lesson 2- Introduction to React"  component={Profile} />
+   <Drawer.Screen name="Lesson 3- Introduction to React"  component={Home} />
+   <Drawer.Screen name="Lesson 4- Introduction to React" component={Search} />
+   <Drawer.Screen name="Lesson 5- Introduction to React"  component={LandingPage} />
+   <Drawer.Screen name="Lesson 6- Introduction to React"  component={LandingPage} />
+   <Drawer.Screen name="Lesson 7- Introduction to React"  component={Landing} />
+   <Drawer.Screen name="Lesson 8- Introduction to React"  component={Profile} />
+   <Drawer.Screen name="Lesson 9- Introduction to React"  component={Home} />
+   <Drawer.Screen name="Lesson 10- Introduction to React" component={Search} />
+   <Drawer.Screen name="Lesson 11- Introduction to React"  component={LandingPage} />
+   <Drawer.Screen name="Lesson 12- Introduction to React"  component={LandingPage} />
+   <Drawer.Screen name="Lesson 13- Introduction to React"  component={Landing} />
 </Drawer.Navigator>
     );
 }

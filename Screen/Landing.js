@@ -7,16 +7,17 @@ import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handl
 function Landing({navigation}) {
     return (
     <SafeAreaView style={styles.container}>
+        
     <View>
         <Image style={ styles.Logoimage} source={require("../assets/New folder/logo.png") } />
     </View> 
     <View style={ styles.buttoncontainer}>
-        <Text style={styles.stext} onPress={()=> navigation.navigate("Signup")}> Stream 1</Text>
-        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signup")}> Web Development (Beginners) </Text>
-        <Text style={styles.stext} onPress={()=> navigation.navigate("Signup")}> Stream 2 </Text>
-        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signup")}> Web Development (Advanced) </Text>
-        <Text style={styles.stext} onPress={()=> navigation.navigate("Signup")}> Stream 3 </Text>
-        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signup")}> Mobile App Development 
+        <Text style={styles.stext} onPress={()=> navigation.navigate("Signin")}> Stream 1</Text>
+        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signin")}> Web Development (Beginners) </Text>
+        <Text style={styles.stext} onPress={()=> navigation.navigate("Signin")}> Stream 2 </Text>
+        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signin")}> Web Development (Advanced) </Text>
+        <Text style={styles.stext} onPress={()=> navigation.navigate("Signin")}> Stream 3 </Text>
+        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signin")}> Mobile App Development 
             (React native) </Text>
     </View>
     <View style={styles.landing}>

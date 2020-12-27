@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import * as yup from 'yup';
 import { Formik } from 'formik';
-import { auth } from '../config/firebase';
+import { auth } from '../Config/firebase';
 
 
 const signinValidationSchema = yup.object().shape({
@@ -49,7 +49,7 @@ const Signin = ({navigation}) => {
     return (
         <View style={styles.container}>
 
-            <ImageBackground source={require('../assets/backgroundpic.jpg')} style={styles.backgroundImage}>
+            <ImageBackground source={require('../assets/DESIGN SCREEN.jpg')} style={styles.backgroundImage}>
 
                 <Formik
                     initialValues={{ email: '', password: '' }}
@@ -106,9 +106,7 @@ const Signin = ({navigation}) => {
                     )}    
 
                 </Formik> 
-
             </ImageBackground>    
-
         </View>
     )
 };

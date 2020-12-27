@@ -14,7 +14,7 @@ import MyDashboard from './MyDashboard';
 
 const Drawer = createDrawerNavigator();
 
-function Dashboard() {
+function Dashboard({navigation}) {
     return (
       <Drawer.Navigator 
       screenOptions={({route})=>({
@@ -41,14 +41,26 @@ function Dashboard() {
         Options={{
      activeTintColor:"green",
      inactiveTintColor: "gray",
-     backgroundColor:"#477A71",
      labelStyle:{
      fontSize:30
      },
      iconStyle:{
+
+
+
+
+
+
+
+
+
+
+
+      
      size:30
      },
-     showLabel:true
+     showLabel:true,
+     backgroundColor:"#477A71",
      }}
      >
      <Drawer.Screen 

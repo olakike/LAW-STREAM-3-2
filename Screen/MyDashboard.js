@@ -75,7 +75,6 @@ const styles = StyleSheet.create({
     },
     icon:{
         flexDirection:"row-reverse",
-        alignSelf:"center",
         marginBottom:"10",
         justifyContent:"space-evenly",
         width:500
@@ -99,7 +98,6 @@ const styles = StyleSheet.create({
         width:"355",
         fontFamily: 'Mulish',
         height:"30",
-        textAlign:"left"
     },
     stext:{
         fontSize: 18,

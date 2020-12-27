@@ -17,13 +17,13 @@ function LandingPage({navigation}) {
     <Text style={ styles.stext}> Choose the class you belong to get started  </Text>
     </View>
     <View style={ styles.buttoncontainer}>
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Landing2')} >
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signin')} >
     <Text style={styles.buttonText} > STREAM 1 </Text>
     </TouchableOpacity> 
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')} >
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signin')} >
     <Text style={styles.buttonText} > STREAM 2 </Text>
     </TouchableOpacity> 
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')} >
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signin')} >
     <Text style={styles.buttonText} > STREAM 3 </Text>
     </TouchableOpacity> 
     <View style={styles.landing}>
