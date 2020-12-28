@@ -59,8 +59,6 @@ const Signin = ({navigation}) => {
                     {({ handleChange, handleBlur, handleSubmit, values, errors }) => (
                         <View style={styles.body}>
 
-                            <Text style={styles.text3}> Welcome  </Text>
-
                             <Text style={styles.text}> Login to Continue </Text>
 
                             <TextInput
