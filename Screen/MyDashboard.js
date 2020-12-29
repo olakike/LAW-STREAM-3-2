@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
         flexDirection:"row-reverse",
         marginBottom:"10",
         justifyContent:"space-evenly",
-        width:500
+        width:400
     },
     userinter:{
         flexDirection:"row",
