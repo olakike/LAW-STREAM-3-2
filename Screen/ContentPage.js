@@ -77,6 +77,7 @@ ftext:{
     fontStyle:"normal",
     width:"355",
     height:"30",
+    fontFamily: 'Mulish',
     textAlign:"center"
 },
 pdtext:{
@@ -84,12 +85,14 @@ pdtext:{
   lineHeight:40,
   fontStyle:"normal",
   height:"30",
+  fontFamily: 'Mulish',
   textAlign:"center"
 },
  ftext2:{
     fontSize: 20,
     lineHeight:20,
     fontStyle:"normal",
+    fontFamily: 'Mulish',
     width:"355",
     height:"30",
     textAlign:"center"
@@ -98,6 +101,7 @@ stext:{
     fontSize: 18,
     fontWeight:"bold",
     lineHeight:45,
+    fontFamily: 'Mulish',
     color:"#F0A64A",
     textAlign:"center"
 },
@@ -105,13 +109,15 @@ ptext:{
     fontSize: 10,
     justifyContent:"space-evenly",
     textAlign:"justify",
-    marginTop:"20"
+    marginTop:"20",
+    fontFamily: 'Mulish',
 },
 buttonText:{
     color:"#F0A64A",
     fontStyle:'normal',
     fontWeight:"600",
     fontSize:"30",
+    fontFamily: 'Mulish',
     textAlign:"center",
     padding:8,
     backgroundColor:"#477A71",

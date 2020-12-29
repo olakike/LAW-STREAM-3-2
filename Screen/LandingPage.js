@@ -17,13 +17,13 @@ function LandingPage({navigation}) {
     <Text style={ styles.stext}> Choose the class you belong to get started  </Text>
     </View>
     <View style={ styles.buttoncontainer}>
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Landing2')} >
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signin')} >
     <Text style={styles.buttonText} > STREAM 1 </Text>
     </TouchableOpacity> 
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')} >
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signin')} >
     <Text style={styles.buttonText} > STREAM 2 </Text>
     </TouchableOpacity> 
-    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signup')} >
+    <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Signin')} >
     <Text style={styles.buttonText} > STREAM 3 </Text>
     </TouchableOpacity> 
     <View style={styles.landing}>
@@ -61,11 +61,13 @@ ftext:{
     alignContent:"center",
     justifyContent:"space-evenly",
     alignSelf:"center",
+    fontFamily: 'Mulish',
     padding:10
 },
 stext:{
     fontSize: 24,
     justifyContent:"space-evenly",
+    fontFamily: 'Mulish',
     fontWeight:"600",
     textAlign:"center",
     lineHeight:30,
@@ -74,6 +76,7 @@ ptext:{
     fontSize: 12,
     justifyContent:"space-evenly",
     textAlign:"center",
+    fontFamily: 'Mulish',
     marginTop:"20"
 },
 buttonText:{
@@ -82,6 +85,7 @@ buttonText:{
     fontWeight:"600",
     fontSize:"30",
     textAlign:"center",
+    fontFamily: 'Mulish',
     padding:8
 },
 textcontainer:{

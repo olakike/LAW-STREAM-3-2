@@ -7,16 +7,17 @@ import { TouchableHighlight, TouchableOpacity } from 'react-native-gesture-handl
 function Landing({navigation}) {
     return (
     <SafeAreaView style={styles.container}>
+        
     <View>
         <Image style={ styles.Logoimage} source={require("../assets/New folder/logo.png") } />
     </View> 
     <View style={ styles.buttoncontainer}>
-        <Text style={styles.stext} onPress={()=> navigation.navigate("Signup")}> Stream 1</Text>
-        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signup")}> Web Development (Beginners) </Text>
-        <Text style={styles.stext} onPress={()=> navigation.navigate("Signup")}> Stream 2 </Text>
-        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signup")}> Web Development (Advanced) </Text>
-        <Text style={styles.stext} onPress={()=> navigation.navigate("Signup")}> Stream 3 </Text>
-        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signup")}> Mobile App Development 
+        <Text style={styles.stext} onPress={()=> navigation.navigate("Signin")}> Stream 1</Text>
+        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signin")}> Web Development (Beginners) </Text>
+        <Text style={styles.stext} onPress={()=> navigation.navigate("Signin")}> Stream 2 </Text>
+        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signin")}> Web Development (Advanced) </Text>
+        <Text style={styles.stext} onPress={()=> navigation.navigate("Signin")}> Stream 3 </Text>
+        <Text style={styles.ftext} onPress={()=> navigation.navigate("Signin")}> Mobile App Development 
             (React native) </Text>
     </View>
     <View style={styles.landing}>
@@ -48,6 +49,7 @@ const styles = StyleSheet.create({
         justifyContent:"space-evenly",
         alignSelf:"center",
         padding:20,
+        fontFamily: 'Mulish',
         color:"#FFFFFF",
         textAlign:"center"
     },
@@ -57,12 +59,14 @@ const styles = StyleSheet.create({
         fontWeight:"800",
         textAlign:"center",
         lineHeight:45,
+        fontFamily: 'Mulish',
         color:"#F0A64A"
     },
     ptext:{
         fontSize: 12,
         justifyContent:"space-evenly",
         textAlign:"center",
+        fontFamily: 'Mulish',
         marginTop:"20"
     },
     buttonText:{
@@ -71,7 +75,8 @@ const styles = StyleSheet.create({
         fontWeight:"600",
         fontSize:"30",
         textAlign:"center",
-        padding:8
+        padding:8,
+        fontFamily: 'Mulish',
     },
     textcontainer:{
         marginBottom:10,
