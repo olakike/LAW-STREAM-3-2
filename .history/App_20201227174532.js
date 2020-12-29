@@ -7,8 +7,6 @@ import {createStackNavigator} from "@react-navigation/stack";
 
 import LandingPage from "./Screen/LandingPage";
 import Landing from "./Screen/Landing";
-import Signup from './Screen/Signup';
-import Signin from './Screen/Signin';
 import UserDashboard from "./Screen/UserDashboard";
 import ContentPage from "./Screen/ContentPage";
 import Dashboard from "./Screen/Dashboard";
@@ -32,8 +30,6 @@ export default function App() {
        }
      }}
      >
-      <Stack.Screen options={{ headerShown: false }} name="Signup" component={Signup} />
-      <Stack.Screen options={{ headerShown: false }} name="Signin" component={Signin} />
       <Stack.Screen options={{headerShown:false}} name='Welcome' component={Dashboard} />
       <Stack.Screen options={{headerShown:false}} name='content' component={ContentPage} />
       <Stack.Screen options={{headerShown:false}} name='Drawer'component={Drawernav} />

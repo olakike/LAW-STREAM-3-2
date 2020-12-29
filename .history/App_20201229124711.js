@@ -32,8 +32,7 @@ export default function App() {
        }
      }}
      >
-      <Stack.Screen options={{ headerShown: false }} name="Signup" component={Signup} />
-      <Stack.Screen options={{ headerShown: false }} name="Signin" component={Signin} />
+      
       <Stack.Screen options={{headerShown:false}} name='Welcome' component={Dashboard} />
       <Stack.Screen options={{headerShown:false}} name='content' component={ContentPage} />
       <Stack.Screen options={{headerShown:false}} name='Drawer'component={Drawernav} />
